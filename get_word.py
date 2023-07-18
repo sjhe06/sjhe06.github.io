@@ -1,7 +1,12 @@
+from flask import Flask
 from tkinter import *
 
+
+app = Flask(__name__)
+
+@app.route('/')
 def click():
-    print("You clicked the button")
+    print('You clicked the button')
 
 window = Tk()
 
