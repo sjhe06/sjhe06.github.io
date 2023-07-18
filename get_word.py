@@ -6,12 +6,4 @@ app = Flask(__name__)
 
 @app.route('/')
 def click():
-    print('You clicked the button')
-
-window = Tk()
-
-button = Button(window, text = "click me!", command = click)
-
-button.pack()
-
-window.mainloop()
+    return '<h2>You clicked the button<h2>'
